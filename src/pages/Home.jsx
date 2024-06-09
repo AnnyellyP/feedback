@@ -1,6 +1,26 @@
+import { CardContainer, IconContainer } from "./Home.styles";
+import iconStarImg from "../assets/icon-star.svg"
+
 
 export function Home() {
   return (
-    <div>Home</div>
-  )
+    <CardContainer>
+      <IconContainer>
+        <img src={iconStarImg} alt=" ícone de estrela" />
+      </IconContainer>  
+      <h1>Como foi o atendimento?</h1>
+      <p>Conte-nos como foi nossa ajuda com a sua solicitação. Agradecemos muito o seu feedback para podermos melhorar nosso atendimento!</p>
+
+      <buttonContainer>
+         <button>1</button>
+         <button>2</button>
+         <button>3</button>
+          <button>4</button>
+          <button>5</button>
+      </buttonContainer>
+
+
+         <button>Enviar</button>
+    </CardContainer>
+    )
 }
